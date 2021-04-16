@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Picker Page</title>
+</head>
+
+<body>
+
+<h1>
+Let's find a good movie!
+</h1>
+
+<form method="POST">
+
+<fieldset data-join="between" name="Filers">
+<legend class="text-muted unbold" data-tag="Filers">Filers</legend>
+<p data-join="between" name="user_rating">
+            <legend class="text-muted unbold" data-tag="IMDb Rating">IMDb user rating (average)</legend>
+    <span></span>
+    <select name="min" value="0.0" ref-marker="ttls_ref_rt_usr">
+                    <option value="1">1</option>
+                    <option value="1.1">1.1</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.3">1.3</option>
+                    <option value="1.4">1.4</option>
+                    <option value="1.5">1.5</option>
+                    <option value="1.6">1.6</option>
+                    <option value="1.7">1.7</option>
+                    <option value="1.8">1.8</option>
+                    <option value="1.9">1.9</option>
+                    <option value="2.0">2.0</option>
+                    <option value="2.1">2.1</option>
+                    <option value="2.2">2.2</option>
+                    <option value="2.3">2.3</option>
+                    <option value="2.4">2.4</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2.6">2.6</option>
+                    <option value="2.7">2.7</option>
+                    <option value="2.8">2.8</option>
+                    <option value="2.9">2.9</option>
+                    <option value="3.0">3.0</option>
+                    <option value="3.1">3.1</option>
+                    <option value="3.2">3.2</option>
+                    <option value="3.3">3.3</option>
+                    <option value="3.4">3.4</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3.6">3.6</option>
+                    <option value="3.7">3.7</option>
+                    <option value="3.8">3.8</option>
+                    <option value="3.9">3.9</option>
+                    <option value="4.0">4.0</option>
+                    <option value="4.1">4.1</option>
+                    <option value="4.2">4.2</option>
+                    <option value="4.3">4.3</option>
+                    <option value="4.4">4.4</option>
+                    <option value="4.5">4.5</option>
+                    <option value="4.6">4.6</option>
+                    <option value="4.7">4.7</option>
+                    <option value="4.8">4.8</option>
+                    <option value="4.9">4.9</option>
+                    <option value="5.0">5.0</option>
+                    <option value="5.1">5.1</option>
+                    <option value="5.2">5.2</option>
+                    <option value="5.3">5.3</option>
+                    <option value="5.4">5.4</option>
+                    <option value="5.5">5.5</option>
+                    <option value="5.6">5.6</option>
+                    <option value="5.7">5.7</option>
+                    <option value="5.8">5.8</option>
+                    <option value="5.9">5.9</option>
+                    <option value="6.0">6.0</option>
+                    <option value="6.1">6.1</option>
+                    <option value="6.2">6.2</option>
+                    <option value="6.3">6.3</option>
+                    <option value="6.4">6.4</option>
+                    <option value="6.5">6.5</option>
+                    <option value="6.6">6.6</option>
+                    <option value="6.7">6.7</option>
+                    <option value="6.8">6.8</option>
+                    <option value="6.9">6.9</option>
+                    <option value="7.0">7.0</option>
+                    <option value="7.1">7.1</option>
+                    <option value="7.2">7.2</option>
+                    <option value="7.3">7.3</option>
+                    <option value="7.4">7.4</option>
+                    <option value="7.5">7.5</option>
+                    <option value="7.6">7.6</option>
+                    <option value="7.7">7.7</option>
+                    <option value="7.8">7.8</option>
+                    <option value="7.9">7.9</option>
+                    <option value="8.0">8.0</option>
+                    <option value="8.1">8.1</option>
+                    <option value="8.2">8.2</option>
+                    <option value="8.3">8.3</option>
+                    <option value="8.4">8.4</option>
+                    <option value="8.5">8.5</option>
+                    <option value="8.6">8.6</option>
+                    <option value="8.7">8.7</option>
+                    <option value="8.8">8.8</option>
+                    <option value="8.9">8.9</option>
+                    <option value="9.0">9.0</option>
+                    <option value="9.1">9.1</option>
+                    <option value="9.2">9.2</option>
+                    <option value="9.3">9.3</option>
+                    <option value="9.4">9.4</option>
+                    <option value="9.5">9.5</option>
+                    <option value="9.6">9.6</option>
+                    <option value="9.7">9.7</option>
+                    <option value="9.8">9.8</option>
+                    <option value="9.9">9.9</option>
+                    <option value="10">10</option>
+    </select>
+    <span>to</span>
+    <select name="max" value="0.0" ref-marker="ttls_ref_rt_usr">
+                    <option value="10">10</option>
+                    <option value="9.9">9.9</option>
+                    <option value="9.8">9.8</option>
+                    <option value="9.7">9.7</option>
+                    <option value="9.6">9.6</option>
+                    <option value="9.5">9.5</option>
+                    <option value="9.4">9.4</option>
+                    <option value="9.3">9.3</option>
+                    <option value="9.2">9.2</option>
+                    <option value="9.1">9.1</option>
+                    <option value="9.0">9.0</option>
+                    <option value="8.9">8.9</option>
+                    <option value="8.8">8.8</option>
+                    <option value="8.7">8.7</option>
+                    <option value="8.6">8.6</option>
+                    <option value="8.5">8.5</option>
+                    <option value="8.4">8.4</option>
+                    <option value="8.3">8.3</option>
+                    <option value="8.2">8.2</option>
+                    <option value="8.1">8.1</option>
+                    <option value="8.0">8.0</option>
+                    <option value="7.9">7.9</option>
+                    <option value="7.8">7.8</option>
+                    <option value="7.7">7.7</option>
+                    <option value="7.6">7.6</option>
+                    <option value="7.5">7.5</option>
+                    <option value="7.4">7.4</option>
+                    <option value="7.3">7.3</option>
+                    <option value="7.2">7.2</option>
+                    <option value="7.1">7.1</option>
+                    <option value="7.0">7.0</option>
+                    <option value="6.9">6.9</option>
+                    <option value="6.8">6.8</option>
+                    <option value="6.7">6.7</option>
+                    <option value="6.6">6.6</option>
+                    <option value="6.5">6.5</option>
+                    <option value="6.4">6.4</option>
+                    <option value="6.3">6.3</option>
+                    <option value="6.2">6.2</option>
+                    <option value="6.1">6.1</option>
+                    <option value="6.0">6.0</option>
+                    <option value="5.9">5.9</option>
+                    <option value="5.8">5.8</option>
+                    <option value="5.7">5.7</option>
+                    <option value="5.6">5.6</option>
+                    <option value="5.5">5.5</option>
+                    <option value="5.4">5.4</option>
+                    <option value="5.3">5.3</option>
+                    <option value="5.2">5.2</option>
+                    <option value="5.1">5.1</option>
+                    <option value="5.0">5.0</option>
+                    <option value="4.9">4.9</option>
+                    <option value="4.8">4.8</option>
+                    <option value="4.7">4.7</option>
+                    <option value="4.6">4.6</option>
+                    <option value="4.5">4.5</option>
+                    <option value="4.4">4.4</option>
+                    <option value="4.3">4.3</option>
+                    <option value="4.2">4.2</option>
+                    <option value="4.1">4.1</option>
+                    <option value="4.0">4.0</option>
+                    <option value="3.9">3.9</option>
+                    <option value="3.8">3.8</option>
+                    <option value="3.7">3.7</option>
+                    <option value="3.6">3.6</option>
+                    <option value="3.5">3.5</option>
+                    <option value="3.4">3.4</option>
+                    <option value="3.3">3.3</option>
+                    <option value="3.2">3.2</option>
+                    <option value="3.1">3.1</option>
+                    <option value="3.0">3.0</option>
+                    <option value="2.9">2.9</option>
+                    <option value="2.8">2.8</option>
+                    <option value="2.7">2.7</option>
+                    <option value="2.6">2.6</option>
+                    <option value="2.5">2.5</option>
+                    <option value="2.4">2.4</option>
+                    <option value="2.3">2.3</option>
+                    <option value="2.2">2.2</option>
+                    <option value="2.1">2.1</option>
+                    <option value="2.0">2.0</option>
+                    <option value="1.9">1.9</option>
+                    <option value="1.8">1.8</option>
+                    <option value="1.7">1.7</option>
+                    <option value="1.6">1.6</option>
+                    <option value="1.5">1.5</option>
+                    <option value="1.4">1.4</option>
+                    <option value="1.3">1.3</option>
+                    <option value="1.2">1.2</option>
+                    <option value="1.1">1.1</option>
+                    <option value="1">1</option>
+    </select>
+
+	
+
+<p data-join="between" name="num_votes">
+            <legend class="text-muted unbold" data-tag="Votes">Number of votes</legend>
+    <span></span>
+    <input type="text" name="votes_min" data-validation="^[0-9]\d*$" size="10" value="" ref-marker="ttls_ref_rt_vt">
+    <span>to</span>
+    <input type="text" name="votes_max" data-validation="^[0-9]\d*$" size="10" value="" ref-marker="ttls_ref_rt_vt">
+   </p>
+
+
+
+<p data-join="between" name="release_date">
+            <legend class="text-muted unbold" data-tag="Released">Release year or range</legend>
+    <span></span>
+    <input type="text" name="year_min" data-validation="^[0-9]\d*$" size="10" value="" ref-marker="ttls_ref_yr">
+    <span>to</span>
+    <input type="text" name="year_max" data-validation="^[0-9]\d*$" size="10" value="" ref-marker="ttls_ref_yr">
+   </p>
+
+
+
+<p data-join="and" name="genres">
+	<legend class="text-muted unbold" data-tag="Votes">Genres (Unselect means select all)</legend>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Drama" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Drama</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Thriller" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Thriller</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Action" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Action</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Crime" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Crime</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Comedy" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Comedy</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Romance" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Romance</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Adventure" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Adventure</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Mystery" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Mystery</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Sci-Fi" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Sci-Fi</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Horror" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Horror</span>
+    </label>
+        </span>
+	
+	<br>
+	
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Fantasy" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Fantasy</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="War" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">War</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Biography" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Biography</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="History" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">History</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Sport" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Sport</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Music" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Music</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Family" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Family</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Western" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Western</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Musical" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Musical</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Film-Noir" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Film-Noir</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Animation" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Animation</span>
+    </label>
+        </span>
+    </p>
+	
+	
+
+<p data-join="and" name="Eliminate genres">
+	<legend class="text-muted unbold" data-tag="Votes">Genres you don't like</legend>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Drama1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Drama</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Thriller1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Thriller</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Action1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Action</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Crime1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Crime</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Comedy1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Comedy</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Romance1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Romance</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Adventure1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Adventure</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Mystery1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Mystery</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Sci-Fi1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Sci-Fi</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Horror1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Horror</span>
+    </label>
+        </span>
+	
+	<br>
+	
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Fantasy1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Fantasy</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="War1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">War</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Biography1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Biography</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="History1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">History</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Sport1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Sport</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Music1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Music</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Family1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Family</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Western1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Western</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Musical1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Musical</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Film-Noir1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Film-Noir</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Animation1" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Animation</span>
+    </label>
+        </span>
+    </p>
+	
+	
+	<p data-join="and" name="show">
+	<legend class="text-muted unbold" data-tag="column_names">What data you want to get?(default:all)</legend>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Poster" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Poster</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Name" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Name</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Genres" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Genres</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="movie_link" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Movie Link</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Runtime" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Runtime</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Certificate" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Certificate</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Rating" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Rating</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Year" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Year</span>
+    </label>
+        </span>
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Votes" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Votes</span>
+    </label>
+        </span>
+
+        <span class="col-2">
+    <label class="unbold">
+        <input type="checkbox"  name="Director" ref-marker="ttls_ref_gnr">
+        <span class="faceter-facet-text">Director</span>
+    </label>
+        </span>
+    </p>
+
+
+
+	<input type="submit" value = "Go!">
+    </fieldset>
+</form>
+
+
+
+</body>
+</html>
